@@ -1,31 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono&family=Monofett&display=swap" rel="stylesheet">    
-        <link rel="stylesheet" href="./main.css">
-        <title>Lukas Kamen</title>
-    </head>
-    <body>
-        <main>
-            <div class="me">
-                <h1>LukasKamen@FirstLight ~ $ me -h </h1>
-                <h1>Socials</h1>
-                <ul>
-                    <li>
-                        <a href="https://github.com/FirstLight1">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://x.com/kamen_lukas">Twitter (x)</a>
-                    </li>
-                    <li>
-                        <a href="">LinkedIn</a>
-                    </li>
-                </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lukas Kamen — Junior Web Developer</title>
+    <meta
+      name="description"
+      content="Lukas Kamen — junior web developer. Currently studying Applied Informatics and Automation at MTF STU (Slovak University of Technology)."
+    />
+    <meta name="author" content="Lukas Kamen" />
+    <meta property="og:title" content="Lukas Kamen — Junior Web Developer" />
+    <meta
+      property="og:description"
+      content="Junior web developer building practical tools end-to-end."
+    />
+    <!-- TODO: create og-image.png (1200×630) at repo root, then uncomment -->
+    <!-- <meta property="og:image" content="https://kamenlukas.github.io/og-image.png" /> -->
+    <!-- <meta property="og:url" content="https://kamenlukas.github.io" /> -->
+
+    <!-- TODO: replace with your own favicon (e.g. favicon.svg or favicon.ico) -->
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231c1917'/%3E%3Ctext x='16' y='21' font-family='ui-monospace,monospace' font-size='13' font-weight='700' text-anchor='middle' fill='%23fafaf9'%3ELK%3C/text%3E%3C/svg%3E"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="intro">
+        <h1 class="name">Lukas Kamen</h1>
+        <p class="role">Junior Web Developer</p>
+        <p class="bio">
+          Web developer building practical tools end-to-end — from browser
+          extensions to deployed web apps. Currently studying Applied
+          Informatics and Automation at MTF STU (Slovak University of
+          Technology). Open to junior roles.
+        </p>
+
+        <!-- TODO: add Lukas_Kamen_CV.pdf to the repo root, then uncomment -->
+        <!--
+        <a href="./Lukas_Kamen_CV.pdf" class="cv-link" download>
+          Download CV <span aria-hidden="true">↓</span>
+        </a>
+        -->
+
+        <!-- TODO: uncomment and fill in your real values -->
+        <!--
+        <ul class="bio__details">
+          <li>
+            <span class="bio__details-label">Year</span>
+            <span>2nd year Bachelor&rsquo;s · graduating 2027</span>
+          </li>
+          <li>
+            <span class="bio__details-label">Based</span>
+            <span>Trnava, Slovakia · open to remote, hybrid, or on-site</span>
+          </li>
+          <li>
+            <span class="bio__details-label">Languages</span>
+            <span>Slovak (native) · English (C1)</span>
+          </li>
+        </ul>
+        -->
+      </header>
+
+      <section class="section" aria-labelledby="work-heading">
+        <h2 id="work-heading" class="section__head">Selected Work</h2>
+
+        <article class="project">
+          <div class="project__no">01</div>
+          <div class="project__body">
+            <!-- TODO: add screenshots/cardmarket.png and uncomment -->
+            <!--
+            <figure class="project__media">
+              <img src="screenshots/cardmarket.png" alt="Cardmarket Auto-Login extension popup" loading="lazy" />
+            </figure>
+            -->
+            <h3 class="project__title">Cardmarket Auto-Login</h3>
+            <p class="project__desc">
+              Chrome extension for one-click login to Cardmarket, with
+              locally-encrypted credential storage. AES-GCM encryption with
+              PBKDF2 key derivation; no data ever leaves the user's device.
+              Published on the Chrome Web Store.
+            </p>
+            <ul class="project__tags">
+              <li>JavaScript</li>
+              <li>Chrome Extension</li>
+              <li>Web Crypto API</li>
+              <li>HTML / CSS</li>
+            </ul>
+            <div class="project__links">
+              <a
+                href="https://bit.ly/3TscEc4"
+                target="_blank"
+                rel="noopener"
+                >Chrome Web Store <span aria-hidden="true">↗</span></a
+              >
+              <a
+                href="https://github.com/FirstLight1/cardmarket-autologin"
+                target="_blank"
+                rel="noopener"
+                >Source <span aria-hidden="true">↗</span></a
+              >
             </div>
-        </main>
-    </body>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__no">02</div>
+          <div class="project__body">
+            <!-- TODO: add screenshots/tradetracker.png and uncomment -->
+            <!--
+            <figure class="project__media">
+              <img src="screenshots/tradetracker.png" alt="TradeTracker desktop app interface" loading="lazy" />
+            </figure>
+            -->
+            <h3 class="project__title">TradeTracker</h3>
+            <p class="project__desc">
+              Trade-tracking app for trading-card collectors. Flask web app
+              packaged as a distributable Windows executable, with an
+              auto-updater and PDF invoice generation. Currently on
+              version 2.8.
+            </p>
+            <ul class="project__tags">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>Jinja</li>
+              <li>JavaScript</li>
+              <li>PyInstaller</li>
+            </ul>
+            <div class="project__links">
+              <a
+                href="https://github.com/FirstLight1/tradeTracker/releases"
+                target="_blank"
+                rel="noopener"
+                >Download <span aria-hidden="true">↗</span></a
+              >
+              <a
+                href="https://github.com/FirstLight1/tradeTracker"
+                target="_blank"
+                rel="noopener"
+                >Source <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project__no">03</div>
+          <div class="project__body">
+            <!-- TODO: add screenshots/pokemon-pricer.png and uncomment -->
+            <!--
+            <figure class="project__media">
+              <img src="screenshots/pokemon-pricer.png" alt="Pokémon TCG Price Checker web app" loading="lazy" />
+            </figure>
+            -->
+            <h3 class="project__title">Pokémon TCG Price Checker</h3>
+            <p class="project__desc">
+              Web app for searching Pokémon trading cards by name or set
+              number, with live price comparison across CardMarket (EU) and
+              TCGPlayer (US). Vanilla JS frontend with serverless functions
+              proxying the upstream APIs.
+            </p>
+            <ul class="project__tags">
+              <li>JavaScript</li>
+              <li>HTML / CSS</li>
+              <li>Netlify Functions</li>
+              <li>REST APIs</li>
+            </ul>
+            <div class="project__links">
+              <!-- TODO: replace with the actual Netlify URL of the deployed app -->
+              <a href="#" target="_blank" rel="noopener"
+                >Live demo <span aria-hidden="true">↗</span></a
+              >
+              <a
+                href="https://github.com/FirstLight1/pokemon_pricer"
+                target="_blank"
+                rel="noopener"
+                >Source <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </article>
+
+        <!--
+          TODO: 4th project (dm-filter). Before uncommenting, remove the
+          "vibecoded" disclaimer line at the top of dm-filter/README.md
+          and add a one-line project description to the GitHub repo.
+
+        <article class="project">
+          <div class="project__no">04</div>
+          <div class="project__body">
+            <h3 class="project__title">Instagram DM Filter</h3>
+            <p class="project__desc">
+              Node.js webhook server that classifies incoming Instagram DMs
+              with the Anthropic Claude API and reacts automatically — auto-replies,
+              push notifications, or content filtering. Deployed on Render.
+            </p>
+            <ul class="project__tags">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>Anthropic API</li>
+              <li>Meta Webhooks</li>
+              <li>Render</li>
+            </ul>
+            <div class="project__links">
+              <a href="https://github.com/FirstLight1/dm-filter" target="_blank" rel="noopener">Source <span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+        </article>
+        -->
+      </section>
+
+      <section class="section" aria-labelledby="skills-heading">
+        <h2 id="skills-heading" class="section__head">Skills</h2>
+        <ul class="skills">
+          <li>JavaScript</li>
+          <li>Node.js</li>
+          <li>Express</li>
+          <li>Python</li>
+          <li>Flask</li>
+          <li>HTML / CSS</li>
+          <li>REST APIs</li>
+          <li>Git</li>
+          <li>Chrome Extensions</li>
+          <li>Netlify / Render</li>
+        </ul>
+      </section>
+
+      <section class="section" aria-labelledby="contact-heading">
+        <h2 id="contact-heading" class="section__head">Contact</h2>
+        <ul class="contact">
+          <li>
+            <span class="contact__label">Email</span>
+            <a href="mailto:kamen.lukas1990@gmail.com"
+              >kamen.lukas1990@gmail.com</a
+            >
+          </li>
+          <li>
+            <span class="contact__label">GitHub</span>
+            <a
+              href="https://github.com/FirstLight1"
+              target="_blank"
+              rel="noopener"
+              >github.com/FirstLight1</a
+            >
+          </li>
+          <li>
+            <span class="contact__label">X / Twitter</span>
+            <a href="https://x.com/kamen_lukas" target="_blank" rel="noopener"
+              >x.com/kamen_lukas</a
+            >
+          </li>
+          <li>
+            <span class="contact__label">LinkedIn</span>
+            <!-- TODO: replace # with your actual LinkedIn URL -->
+            <a href="#" target="_blank" rel="noopener"
+              >linkedin.com/in/your-handle</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <p>© 2026 Lukas Kamen</p>
+      </footer>
+    </main>
+  </body>
 </html>
