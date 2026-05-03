@@ -232,6 +232,23 @@ a:focus-visible {
   max-width: 58ch;
 }
 
+.project__award {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.45rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.project__award span {
+  font-size: 0.85rem;
+  line-height: 1;
+}
+
 .project__tags {
   list-style: none;
   display: flex;
@@ -285,6 +302,44 @@ a:focus-visible {
 
 .project__links a:hover span {
   transform: translate(2px, -2px);
+}
+
+/* ── Experience ─────────────────────────────────────────────────── */
+
+.experience {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.experience:first-of-type {
+  padding-top: 0;
+}
+
+.experience:last-of-type {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.experience__title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.experience__meta {
+  margin-top: 0.35rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+  color: var(--muted);
+}
+
+.experience__desc {
+  margin-top: 0.7rem;
+  color: var(--text);
+  line-height: 1.6;
+  font-size: 0.98rem;
+  max-width: 58ch;
 }
 
 /* ── Skills ─────────────────────────────────────────────────────── */
@@ -378,7 +433,8 @@ a:focus-visible {
 .section:nth-of-type(1) { animation-delay: 0.15s; }
 .section:nth-of-type(2) { animation-delay: 0.25s; }
 .section:nth-of-type(3) { animation-delay: 0.35s; }
-.footer { animation-delay: 0.45s; }
+.section:nth-of-type(4) { animation-delay: 0.45s; }
+.footer { animation-delay: 0.55s; }
 
 @media (prefers-reduced-motion: reduce) {
   *,

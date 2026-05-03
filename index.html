@@ -42,7 +42,8 @@
           Web developer building practical tools end-to-end — from browser
           extensions to deployed web apps. Currently studying Applied
           Informatics and Automation at MTF STU (Slovak University of
-          Technology). Open to junior roles.
+          Technology). Outside of class, tinkering with self-hosting on a
+          Raspberry Pi and a small VPS. Open to junior roles.
         </p>
 
         <!-- TODO: add Lukas_Kamen_CV.pdf to the repo root, then uncomment -->
@@ -52,8 +53,6 @@
         </a>
         -->
 
-        <!-- TODO: uncomment and fill in your real values -->
-        <!--
         <ul class="bio__details">
           <li>
             <span class="bio__details-label">Year</span>
@@ -61,14 +60,13 @@
           </li>
           <li>
             <span class="bio__details-label">Based</span>
-            <span>Trnava, Slovakia · open to remote, hybrid, or on-site</span>
+            <span>Trnava or Bratislava, Slovakia · remote, hybrid, or on-site</span>
           </li>
           <li>
             <span class="bio__details-label">Languages</span>
-            <span>Slovak (native) · English (C1)</span>
+            <span>Slovak (native) · English (B1)</span>
           </li>
         </ul>
-        -->
       </header>
 
       <section class="section" aria-labelledby="work-heading">
@@ -77,12 +75,9 @@
         <article class="project">
           <div class="project__no">01</div>
           <div class="project__body">
-            <!-- TODO: add screenshots/cardmarket.png and uncomment -->
-            <!--
             <figure class="project__media">
-              <img src="screenshots/cardmarket.png" alt="Cardmarket Auto-Login extension popup" loading="lazy" />
+              <img src="images/auto-login.webp" alt="Cardmarket Auto-Login extension popup" loading="lazy" />
             </figure>
-            -->
             <h3 class="project__title">Cardmarket Auto-Login</h3>
             <p class="project__desc">
               Chrome extension for one-click login to Cardmarket, with
@@ -116,52 +111,37 @@
         <article class="project">
           <div class="project__no">02</div>
           <div class="project__body">
-            <!-- TODO: add screenshots/tradetracker.png and uncomment -->
-            <!--
             <figure class="project__media">
-              <img src="screenshots/tradetracker.png" alt="TradeTracker desktop app interface" loading="lazy" />
+              <img src="images/tradeTracker.webp" alt="TradeTracker web app dashboard" loading="lazy" />
             </figure>
-            -->
             <h3 class="project__title">TradeTracker</h3>
             <p class="project__desc">
-              Trade-tracking app for trading-card collectors. Flask web app
-              packaged as a distributable Windows executable, with an
-              auto-updater and PDF invoice generation. Currently on
-              version 2.8.
+              Trade-tracking web app commissioned by a trading-card
+              collector. Flask backend with PDF invoice generation and a
+              JavaScript frontend. Originally shipped as a packaged Windows
+              executable with an auto-updater; now deployed online and in
+              active use by the client.
             </p>
             <ul class="project__tags">
               <li>Python</li>
               <li>Flask</li>
               <li>Jinja</li>
               <li>JavaScript</li>
-              <li>PyInstaller</li>
+              <li>Deployment</li>
             </ul>
-            <div class="project__links">
-              <a
-                href="https://github.com/FirstLight1/tradeTracker/releases"
-                target="_blank"
-                rel="noopener"
-                >Download <span aria-hidden="true">↗</span></a
-              >
-              <a
-                href="https://github.com/FirstLight1/tradeTracker"
-                target="_blank"
-                rel="noopener"
-                >Source <span aria-hidden="true">↗</span></a
-              >
-            </div>
+              No public links by design: source repo is private, deployment
+              is behind Cloudflare Access (internal client tool). Verification
+              comes from the screenshot above; recruiters who want a code
+              walkthrough can request one in interview.
           </div>
         </article>
 
         <article class="project">
           <div class="project__no">03</div>
           <div class="project__body">
-            <!-- TODO: add screenshots/pokemon-pricer.png and uncomment -->
-            <!--
             <figure class="project__media">
-              <img src="screenshots/pokemon-pricer.png" alt="Pokémon TCG Price Checker web app" loading="lazy" />
+              <img src="images/pokemon-tcg-price-checker.webp" alt="Pokémon TCG Price Checker web app" loading="lazy" />
             </figure>
-            -->
             <h3 class="project__title">Pokémon TCG Price Checker</h3>
             <p class="project__desc">
               Web app for searching Pokémon trading cards by name or set
@@ -176,10 +156,8 @@
               <li>REST APIs</li>
             </ul>
             <div class="project__links">
-              <!-- TODO: replace with the actual Netlify URL of the deployed app -->
-              <a href="#" target="_blank" rel="noopener"
-                >Live demo <span aria-hidden="true">↗</span></a
-              >
+              <a href="https://pokemontcgpricecheck.netlify.app/" target="_blank" rel="noopener"
+                >Live demo <span aria-hidden="true">↗</span></a>
               <a
                 href="https://github.com/FirstLight1/pokemon_pricer"
                 target="_blank"
@@ -190,13 +168,48 @@
           </div>
         </article>
 
+        <article class="project">
+          <div class="project__no">04</div>
+          <div class="project__body">
+            <h3 class="project__title">Urban Greenery Analysis — Trnava</h3>
+            <p class="project__award">
+              <span aria-hidden="true">★</span> Hackathon winner
+            </p>
+            <p class="project__desc">
+              Web app analyzing long-term vegetation (NDVI) trends in
+              Trnava using Sentinel-2 satellite imagery, correlating
+              greenery changes with local temperature data to surface
+              earlier pollen-season onset. Flask backend with
+              geopandas / rasterio data processing; interactive
+              Plotly.js charts and dynamic trend maps on the frontend.
+              Built as a team submission and won the hackathon.
+            </p>
+            <ul class="project__tags">
+              <li>Python</li>
+              <li>Flask</li>
+              <li>Sentinel Hub API</li>
+              <li>geopandas</li>
+              <li>Plotly.js</li>
+              <li>JavaScript</li>
+            </ul>
+            <div class="project__links">
+              <a
+                href="https://github.com/Eskimaci/eskimaci"
+                target="_blank"
+                rel="noopener"
+                >Source <span aria-hidden="true">↗</span></a
+              >
+            </div>
+          </div>
+        </article>
+
         <!--
-          TODO: 4th project (dm-filter). Before uncommenting, remove the
+          TODO: 5th project (dm-filter). Before uncommenting, remove the
           "vibecoded" disclaimer line at the top of dm-filter/README.md
           and add a one-line project description to the GitHub repo.
 
         <article class="project">
-          <div class="project__no">04</div>
+          <div class="project__no">05</div>
           <div class="project__body">
             <h3 class="project__title">Instagram DM Filter</h3>
             <p class="project__desc">
@@ -219,6 +232,21 @@
         -->
       </section>
 
+      <section class="section" aria-labelledby="experience-heading">
+        <h2 id="experience-heading" class="section__head">Experience</h2>
+        <article class="experience">
+          <h3 class="experience__title">Notebook &amp; Phone Repair Technician</h3>
+          <p class="experience__meta">
+            Litech s.r.o · Sereď, Slovakia · Summer 2024 · Full-time (40 h / week)
+          </p>
+          <p class="experience__desc">
+            Hands-on hardware repair role over the summer. Diagnostics and
+            component-level repair on notebooks and smartphones, with
+            customer intake and handover.
+          </p>
+        </article>
+      </section>
+
       <section class="section" aria-labelledby="skills-heading">
         <h2 id="skills-heading" class="section__head">Skills</h2>
         <ul class="skills">
@@ -229,9 +257,12 @@
           <li>Flask</li>
           <li>HTML / CSS</li>
           <li>REST APIs</li>
+          <li>SQLite</li>
           <li>Git</li>
+          <li>Linux</li>
           <li>Chrome Extensions</li>
           <li>Netlify / Render</li>
+          <li>Self-hosting</li>
         </ul>
       </section>
 
@@ -262,7 +293,7 @@
           <li>
             <span class="contact__label">LinkedIn</span>
             <!-- TODO: replace # with your actual LinkedIn URL -->
-            <a href="#" target="_blank" rel="noopener"
+            <a href="https://www.linkedin.com/in/luk%C3%A1%C5%A1-kamen-101978403/" target="_blank" rel="noopener"
               >linkedin.com/in/your-handle</a
             >
           </li>
